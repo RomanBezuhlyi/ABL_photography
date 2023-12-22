@@ -1,0 +1,31 @@
+/* Базові стилі */
+
+/* Загальні налаштування */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100vh;
+  font-style: normal;
+}
+
+body {
+  background: $white;
+  font-family: $font-main;
+  color: $accent;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+}
