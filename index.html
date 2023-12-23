@@ -7,10 +7,605 @@
     <title>ABL photography</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
-    
-    <main></main>
+    <header id="header" class="header-wrap">
+  <div class="container">
+    <div class="header">
+      <a class="header__logo" href="index.html"
+        ><img src="./img/logo.svg" alt=""
+      /></a>
+      <nav class="header__nav">
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Session details</a>
+        <a href="#">Pricing</a>
+        <a href="#">FAQ</a>
+        <a href="#">Raves</a>
+      </nav>
+      <div class="header__right">
+        <a class="header__btn" href="#">Contact</a>
+        <a class="header__call" href="tel:+111111111"
+          ><img src="./img/icons/phone.svg" alt=""
+        /></a>
+        <button class="header__burger">
+          <img src="./img/icons/burger.svg" alt="" />menu
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+ <div class="menu">
+  <div class="menu__overlay"></div>
+  <div class="container">
+    <div class="menu__top">
+      <a class="menu__logo" href="index.html"
+        ><img src="./img/logo-white.png" alt=""
+      /></a>
+      <button class="menu__close">
+        <img src="./img/icons/close.svg" alt="" />
+      </button>
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="#">About</a></li>
+      <li class="menu__item"><a href="#">Portfolio</a></li>
+      <li class="menu__item"><a href="#">Session details</a></li>
+      <li class="menu__item"><a href="#">Pricing</a></li>
+      <li class="menu__item"><a href="#">FAQ</a></li>
+      <li class="menu__item"><a href="#">Raves</a></li>
+      <li class="menu__item"><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+    <main>
+      <section id="hero" class="hero-wrap">
+  <div class="container">
+    <div class="hero">
+      <p class="hero__descr">
+        San Diego’s #1 Luxury Maternity and Newborn Photography Studio
+      </p>
+      <p class="hero__pre-title">Limited time newborn photography offer</p>
+      <h1 class="hero__title">
+        Get a <span>FREE 1-hour Outdoor Session</span> when you book a
+        <span>3-hour Studio Session.</span>
+      </h1>
+      <button class="hero__btn button">Contact us</button>
+      <div class="hero__swiper swiper">
+        <div class="swiper-wrapper">
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-1.png"
+            alt=""
+          />
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-2.png"
+            alt=""
+          />
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-3.png"
+            alt=""
+          />
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-1.png"
+            alt=""
+          />
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-2.png"
+            alt=""
+          />
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-3.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="hero__swiper-nav">
+        <button class="hero__swiper-prev swiper-btn">
+          <img src="./img/icons/arrow-left.svg" alt="" />
+        </button>
+        <button class="hero__swiper-prev swiper-btn-mobile">
+          <img src="./img/icons/arrow-left-mobile.svg" alt="" />
+        </button>
+        <div class="hero__swiper-pagination swiper-num"></div>
+        <button class="hero__swiper-next swiper-btn">
+          <img src="./img/icons/arrow-right.svg" alt="" />
+        </button>
+        <button class="hero__swiper-next swiper-btn-mobile">
+          <img src="./img/icons/arrow-right-mobile.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+ <section id="welcome" class="welcome-wrap">
+  <div class="container">
+    <div class="welcome">
+      <img class="welcome__img" src="./img/master.png" alt="" />
+      <h2 class="welcome__title title"><span>Hello, I am Svetlana.</span></h2>
+      <p class="welcome__text">
+        I've been a professional photographer for over 20 years and I pour my
+        heart and soul into every picture I create!
+      </p>
+      <p class="welcome__text">
+        My mission is to stand the test of time, creating images that are as
+        beautiful and meaningful today as they will be in the future. Your
+        newborn's first days are a once-in-a-lifetime event, and I promise to
+        preserve them with timeless elegance.
+      </p>
+    </div>
+  </div>
+</section>
+<img class="welcome-wrap-img" src="./img/hero/hero-3.png" alt="" />
+
+      <section id="success" class="success-wrap">
+  <div class="container">
+    <ul class="success">
+      <li class="success__card">
+        <span class="success__card-num">20+</span>
+        <p class="success__card-text">years of practice</p>
+      </li>
+      <li class="success__card">
+        <span class="success__card-num">14+</span>
+        <p class="success__card-text">
+          years exclusively specialized in newborn photography
+        </p>
+      </li>
+      <li class="success__card">
+        <span class="success__card-num">1000+</span>
+        <p class="success__card-text">photographed newborns</p>
+      </li>
+    </ul>
+  </div>
+</section>
+ <section id="timeless" class="timeless-wrap">
+  <div class="container">
+    <div class="timeless">
+      <img class="timeless__img" src="./img/timeless.png" alt="" />
+      <h2 class="timeless__title">timeless. Creative. Unique</h2>
+    </div>
+  </div>
+</section>
+
+      <section id="advantages" class="advantages-wrap">
+  <div class="container">
+    <div class="advantages">
+      <h2 class="advantages__title title">
+        Why should you hire <span>ABL Photography?</span>
+      </h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <img src="./img/why-should/why-should-1.svg" alt="" />
+          <h3>Timeless. Creative. Unique</h3>
+          <p>
+            We offer a unique and creative approach to capturing the most
+            precious moments of your newborn's life. With a keen eye for
+            artistic detail and a commitment to excellence, we create timeless
+            and stunning newborn art that will be cherished for generations.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <img src="./img/why-should/why-should-2.svg" alt="" />
+          <h3>Photographer + Assistant Team</h3>
+          <p>
+            I always have an assistant by my side during newborn sessions to
+            ensure the safety of your baby. Together, we create a smooth and
+            efficient workflow, allowing us to make the most of our time
+            together and capture a wide range of beautiful pictures.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <img src="./img/why-should/why-should-3.svg" alt="" />
+          <h3>Safety is our priority</h3>
+          <p>
+            We ensure following safety protocols and pay close attention to
+            detail. Our promise to you, your little one will be handled with
+            care.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <img src="./img/why-should/why-should-4.svg" alt="" />
+          <h3>Prepared for fast change</h3>
+          <p>
+            My assistant and I have multiple scenarios prepared in the event
+            babies become fussy. We will swiftly adjust the props in order to
+            achieve the best results.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <img src="./img/why-should/why-should-5.svg" alt="" />
+          <h3>Professional grade equipment and props</h3>
+          <p>
+            Our state-of-the-art cameras, lenses, props, and lighting will also
+            guarantee that your baby’s photos will project the wow factor you’ve
+            always been looking for!
+          </p>
+        </li>
+        <li class="advantages__item">
+          <img src="./img/why-should/why-should-6.svg" alt="" />
+          <h3>Relaxed experience for parents</h3>
+          <p>
+            While my assistant and I are working on the set, you can relax and
+            read a magazine, or take a nap. There is a comfy couch in our
+            studio, refreshment drinks, and snacks.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+ <section id="newborn" class="newborn-wrap">
+  <div class="container">
+    <div class="newborn">
+      <h2 class="newborn__title title"><span>Newborn</span> Portfolio</h2>
+      <div class="newborn__switch">
+        <button class="active">Studio</button>
+        <button>Outdoor</button>
+      </div>
+      <div class="newborn__carousel newborn__carousel-1">
+        <div class="newborn__swiper newborn__swiper-1 swiper">
+          <div class="swiper-wrapper">
+            <img
+              class="swiper-slide newborn__slide"
+              src="./img/newborn/newborn-1.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide newborn__slide"
+              src="./img/newborn/newborn-2.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide newborn__slide"
+              src="./img/newborn/newborn-1.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide newborn__slide"
+              src="./img/newborn/newborn-2.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide newborn__slide"
+              src="./img/newborn/newborn-1.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide newborn__slide"
+              src="./img/newborn/newborn-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="newborn__swiper-nav">
+          <button
+            class="newborn__swiper-prev newborn__swiper-prev-1 swiper-btn"
+          >
+            <img src="./img/icons/arrow-left.svg" alt="" />
+          </button>
+          <button
+            class="newborn__swiper-prev newborn__swiper-prev-1 swiper-btn-mobile"
+          >
+            <img src="./img/icons/arrow-left-mobile.svg" alt="" />
+          </button>
+          <div
+            class="newborn__swiper-pagination newborn__swiper-pagination-1 swiper-num"
+          ></div>
+          <button
+            class="newborn__swiper-next newborn__swiper-next-1 swiper-btn"
+          >
+            <img src="./img/icons/arrow-right.svg" alt="" />
+          </button>
+          <button
+            class="newborn__swiper-next newborn__swiper-next-1 swiper-btn-mobile"
+          >
+            <img src="./img/icons/arrow-right-mobile.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="newborn__carousel newborn__carousel-2 none">
+        <div class="newborn__swiper newborn__swiper-2 swiper">
+          <div class="swiper-wrapper">
+            <img
+              class="swiper-slide newborn__slide"
+              src="./img/newborn/newborn-2.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide newborn__slide"
+              src="./img/newborn/newborn-1.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide newborn__slide"
+              src="./img/newborn/newborn-2.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide newborn__slide"
+              src="./img/newborn/newborn-1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="newborn__swiper-nav">
+          <button
+            class="newborn__swiper-prev newborn__swiper-prev-2 swiper-btn"
+          >
+            <img src="./img/icons/arrow-left.svg" alt="" />
+          </button>
+          <button
+            class="newborn__swiper-prev newborn__swiper-prev-2 swiper-btn-mobile"
+          >
+            <img src="./img/icons/arrow-left-mobile.svg" alt="" />
+          </button>
+          <div
+            class="newborn__swiper-pagination newborn__swiper-pagination-2 swiper-num"
+          ></div>
+          <button
+            class="newborn__swiper-next newborn__swiper-next-2 swiper-btn"
+          >
+            <img src="./img/icons/arrow-right.svg" alt="" />
+          </button>
+          <button
+            class="newborn__swiper-next newborn__swiper-next-2 swiper-btn-mobile"
+          >
+            <img src="./img/icons/arrow-right-mobile.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <a class="newborn__portfolio" href="#">see full portfolio</a>
+    </div>
+  </div>
+</section>
+
+      <section id="maternity" class="maternity-wrap">
+  <div class="container">
+    <div class="maternity">
+      <h2 class="maternity__title title"><span>Maternity</span> Portfolio</h2>
+      <div class="maternity__switch">
+        <button class="active">Studio</button>
+        <button>Outdoor</button>
+      </div>
+      <div class="maternity__carousel maternity__carousel-1">
+        <div class="maternity__swiper maternity__swiper-1 swiper">
+          <div class="swiper-wrapper">
+            <img
+              class="swiper-slide maternity__slide"
+              src="./img/maternity/maternity-1.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide maternity__slide"
+              src="./img/maternity/maternity-2.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide maternity__slide"
+              src="./img/maternity/maternity-1.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide maternity__slide"
+              src="./img/maternity/maternity-2.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide maternity__slide"
+              src="./img/maternity/maternity-1.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide maternity__slide"
+              src="./img/maternity/maternity-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="maternity__swiper-nav">
+          <button
+            class="maternity__swiper-prev maternity__swiper-prev-1 swiper-btn"
+          >
+            <img src="./img/icons/arrow-left.svg" alt="" />
+          </button>
+          <button
+            class="maternity__swiper-prev maternity__swiper-prev-1 swiper-btn-mobile"
+          >
+            <img src="./img/icons/arrow-left-mobile.svg" alt="" />
+          </button>
+          <div
+            class="maternity__swiper-pagination maternity__swiper-pagination-1 swiper-num"
+          ></div>
+          <button
+            class="maternity__swiper-next maternity__swiper-next-1 swiper-btn"
+          >
+            <img src="./img/icons/arrow-right.svg" alt="" />
+          </button>
+          <button
+            class="maternity__swiper-next maternity__swiper-next-1 swiper-btn-mobile"
+          >
+            <img src="./img/icons/arrow-right-mobile.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="maternity__carousel maternity__carousel-2 none">
+        <div class="maternity__swiper maternity__swiper-2 swiper">
+          <div class="swiper-wrapper">
+            <img
+              class="swiper-slide maternity__slide"
+              src="./img/maternity/maternity-2.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide maternity__slide"
+              src="./img/maternity/maternity-1.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide maternity__slide"
+              src="./img/maternity/maternity-2.png"
+              alt=""
+            />
+            <img
+              class="swiper-slide maternity__slide"
+              src="./img/maternity/maternity-1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="maternity__swiper-nav">
+          <button
+            class="maternity__swiper-prev maternity__swiper-prev-2 swiper-btn"
+          >
+            <img src="./img/icons/arrow-left.svg" alt="" />
+          </button>
+          <button
+            class="maternity__swiper-prev maternity__swiper-prev-2 swiper-btn-mobile"
+          >
+            <img src="./img/icons/arrow-left-mobile.svg" alt="" />
+          </button>
+          <div
+            class="maternity__swiper-pagination maternity__swiper-pagination-2 swiper-num"
+          ></div>
+          <button
+            class="maternity__swiper-next maternity__swiper-next-2 swiper-btn"
+          >
+            <img src="./img/icons/arrow-right.svg" alt="" />
+          </button>
+          <button
+            class="maternity__swiper-next maternity__swiper-next-2 swiper-btn-mobile"
+          >
+            <img src="./img/icons/arrow-right-mobile.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <a class="maternity__portfolio" href="#">see full portfolio</a>
+    </div>
+  </div>
+</section>
+ <section id="session" class="session-wrap">
+  <div class="container">
+    <div class="session">
+      <h2 class="session__title-mobile title">
+        <span>Studio</span> Newborn Session
+      </h2>
+      <div class="session__item">
+        <img class="session__item-img" src="./img/studio.png" alt="" />
+        <div class="session__item-list">
+          <h2 class="title"><span>Studio</span> Newborn Session</h2>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Our professionally
+            equipped studio offers a cozy and controlled environment for your
+            baby's photoshoot
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Multiple backdrop options
+            to match your preferred style
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Gentle handpng and care
+            for your newborn to ensure their comfort throughout the session
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Carefully selected the
+            best handmade outfits and props from around the world available to
+            enhance the aesthetic of your photos
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Setups are designed to
+            match your nursery or home decor
+          </p>
+        </div>
+      </div>
+      <h2 class="session__title-mobile title">
+        <span>Outdoor</span> Newborn Session
+      </h2>
+      <div class="session__item two">
+        <div class="session__item-list">
+          <h2 class="title"><span>Outdoor</span> Newborn Session</h2>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Experience the beauty of
+            the great outdoors in San Diego with a skilled photographer
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Choose a scenic location
+            or allow our photographer to recommend one
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" />Natural lighting for soft,
+            radiant images
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Capture the charm of your
+            newborn in the nature
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Setups feature natural
+            elements, greenery and flowers
+          </p>
+        </div>
+        <img class="session__item-img" src="./img/outdoor.png" alt="" />
+      </div>
+      <h2 class="session__title-mobile title">
+        <span>Maternity</span> Session
+      </h2>
+      <div class="session__item three">
+        <img
+          class="session__item-img"
+          src="./img/maternity-session.png"
+          alt=""
+        />
+        <div class="session__item-list">
+          <h2 class="title"><span>Maternity</span> Session</h2>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Experience Luxury
+            Maternity Session that makes you feel confident, beautiful and
+            pampered.
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Choose from a huge
+            collection of stunning maternity gowns in a variety of styles and
+            colors.
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Mesmerized by the
+            simplicity of Studio Maternity Photography? Let’s play with dramatic
+            lighting and flowing fabrics to create one-of-a-kind timeless
+            portraits.
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Love San Diego outdoors?
+            Choose between a park, beach, field, woodsy or urban setting.
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Work with our professional
+            hair and make-up artist to complete your look.
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> Partners and older kids
+            are welcome to participate in a maternity session.
+          </p>
+          <p>
+            <img src="./img/icons/tick.svg" alt="" /> The best time for
+            maternity photos is around 28-32 weeks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
     
     <script src="./js/index.bundle.js"></script>
   </body>
