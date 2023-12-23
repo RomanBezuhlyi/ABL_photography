@@ -1,0 +1,114 @@
+.newborn-wrap {
+  padding-top: 100px;
+  @media (max-width: 1200px) {
+    padding-top: 80px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 70px;
+  }
+  @media (max-width: 576px) {
+    padding-top: 60px;
+  }
+}
+.newborn-wrap .container {
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.newborn {
+  &__title {
+    text-align: center;
+    margin-bottom: 30px;
+    @media (max-width: 991px) {
+      margin-bottom: 27px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 15px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 576px) {
+      margin-bottom: 20px;
+    }
+    span {
+      font-style: italic;
+    }
+  }
+  &__switch {
+    @include flex(row, center, center);
+    gap: 175px;
+    margin-bottom: 45px;
+    @media (max-width: 991px) {
+      gap: 69px;
+      margin-bottom: 27px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 15px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 576px) {
+      margin-bottom: 20px;
+    }
+    button {
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: uppercase;
+      @media (max-width: 991px) {
+        font-size: 14px;
+      }
+    }
+    button.active {
+      text-decoration-line: underline;
+    }
+  }
+  &__swiper-nav {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: 100%;
+    @include flex(row, center, center);
+    gap: 100px;
+    @media (max-width: 768px) {
+      padding: 0 15px;
+    }
+    @media (max-width: 576px) {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      @include flex(row, space-between, center);
+    }
+    @media (max-width: 375px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 0 15px;
+    }
+  }
+  &__slide {
+    @media (max-width: 1440px) {
+      width: 520px;
+      height: 415px;
+    }
+    @media (max-width: 1200px) {
+      width: 270px;
+      height: 330px;
+    }
+    @media (max-width: 991px) {
+      width: 330px;
+      height: 315px;
+    }
+    @media (max-width: 576px) {
+      width: 100%;
+      height: 430px;
+    }
+    @media (max-width: 375px) {
+      height: 400px;
+    }
+  }
+  &__portfolio {
+    display: block;
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+      padding: 0 15px;
+    }
+  }
+}
