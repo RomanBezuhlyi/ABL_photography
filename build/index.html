@@ -7,6 +7,11 @@
     <title>ABL photography</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header id="header" class="header-wrap">
@@ -40,7 +45,7 @@
   <div class="container">
     <div class="menu__top">
       <a class="menu__logo" href="index.html"
-        ><img src="./img/logo-white.svg" alt=""
+        ><img src="./img/logo-white.png" alt=""
       /></a>
       <button class="menu__close">
         <img src="./img/icons/close.svg" alt="" />
@@ -58,7 +63,71 @@
   </div>
 </div>
 
-    <main></main>
+    <main><section id="hero" class="hero-wrap">
+  <div class="container">
+    <div class="hero">
+      <p class="hero__descr">
+        San Diego’s #1 Luxury Maternity and Newborn Photography Studio
+      </p>
+      <p class="hero__pre-title">Limited time newborn photography offer</p>
+      <h1 class="hero__title">
+        Get a <span>FREE 1-hour Outdoor Session</span> when you book a
+        <span>3-hour Studio Session.</span>
+      </h1>
+      <button class="hero__btn button">Contact us</button>
+      <div class="hero__swiper swiper">
+        <div class="swiper-wrapper">
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-1.png"
+            alt=""
+          />
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-2.png"
+            alt=""
+          />
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-3.png"
+            alt=""
+          />
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-1.png"
+            alt=""
+          />
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-2.png"
+            alt=""
+          />
+          <img
+            class="swiper-slide hero__slide"
+            src="./img/hero/hero-3.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="hero__swiper-nav">
+        <button class="hero__swiper-prev swiper-btn">
+          <img src="./img/icons/arrow-left.svg" alt="" />
+        </button>
+        <button class="hero__swiper-prev swiper-btn-mobile">
+          <img src="./img/icons/arrow-left-mobile.svg" alt="" />
+        </button>
+        <div class="hero__swiper-pagination swiper-num"></div>
+        <button class="hero__swiper-next swiper-btn">
+          <img src="./img/icons/arrow-right.svg" alt="" />
+        </button>
+        <button class="hero__swiper-next swiper-btn-mobile">
+          <img src="./img/icons/arrow-right-mobile.svg" alt="" />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
     
     <script src="./js/index.bundle.js"></script>
   </body>
