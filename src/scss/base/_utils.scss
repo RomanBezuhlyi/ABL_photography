@@ -12,9 +12,8 @@
   text-align: center;
   font-size: 40px;
   line-height: 140%;
-  margin-bottom: 50px;
-  @media (max-width: 768px) {
-    margin-bottom: 30px;
+  @media (max-width: 991px) {
+    font-size: 30px;
   }
   span {
     font-style: italic;
@@ -33,13 +32,13 @@
 }
 .swiper-btn {
   @include flex(row, center, center);
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     display: none;
   }
 }
 .swiper-btn-mobile {
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     @include flex(row, center, center);
   }
 }
@@ -62,7 +61,7 @@
     background-color: transparent;
     color: $accent;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     font-size: 14px;
   }
 }
