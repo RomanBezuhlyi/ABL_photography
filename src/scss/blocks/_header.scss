@@ -1,10 +1,83 @@
+.header-wrap {
+  background-color: $white;
+  @include flex(row, space-between, center);
+  height: 95px;
+  @media (max-width: 576px) {
+    height: 59px;
+  }
+}
 .header {
-	background-color: rgb(195, 220, 231);
-	padding: 50px 0;
-
-	&__row {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+  @include flex(row, space-between, center);
+  &__logo {
+    @media (max-width: 992px) {
+      width: 130px;
+      height: 54.516px;
+    }
+    @media (max-width: 576px) {
+      width: 103px;
+      height: 43px;
+    }
+  }
+  &__nav {
+    @include flex(row, center, center);
+    gap: 50px;
+    @media (max-width: 992px) {
+      gap: 20px;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+    a {
+      color: $text;
+      line-height: 150%;
+    }
+  }
+  &__right {
+    @include flex(row, center, center);
+    gap: 32px;
+    @media (max-width: 576px) {
+      gap: 27px;
+    }
+  }
+  &__call {
+    display: none;
+    @media (max-width: 768px) {
+      @include flex(row, center, center);
+    }
+  }
+  &__burger {
+    display: none;
+    @media (max-width: 768px) {
+      @include flex(column, center, center);
+      color: $accent;
+      font-size: 8px;
+      font-weight: 600;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    @media (max-width: 375px) {
+      font-size: 6px;
+    }
+  }
+  &__btn {
+    color: $accent;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 10px 30px;
+    border: 0.5px solid $accent;
+    @include transition;
+    @media (max-width: 768px) {
+      padding: 8px 25px;
+      font-size: 14px;
+    }
+    @media (max-width: 375px) {
+      padding: 8px 20px;
+    }
+    &:hover {
+      color: $white;
+      background: $accent;
+    }
+  }
 }
