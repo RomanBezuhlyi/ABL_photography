@@ -13,7 +13,7 @@
   font-size: 40px;
   line-height: 140%;
   margin-bottom: 50px;
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     margin-bottom: 30px;
   }
   span {
@@ -62,7 +62,7 @@
     background-color: transparent;
     color: $accent;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     font-size: 14px;
   }
 }

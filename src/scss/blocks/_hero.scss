@@ -23,20 +23,21 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 134%;
+    padding: 7px 13px;
+    border: 0.5px solid $accent;
     margin-bottom: 55px;
     @media (max-width: 768px) {
       font-size: 14px;
+      width: 409.707px;
       margin-bottom: 40px;
     }
     @media (max-width: 576px) {
       font-size: 14px;
-      width: 409.707px;
-      padding: 7px 13px;
+      width: 300px;
       margin-bottom: 32px;
     }
     @media (max-width: 375px) {
-      width: 100%;
-      padding: 0 15px;
+      width: calc(100% - 30px);
       margin-bottom: 30px;
     }
   }
