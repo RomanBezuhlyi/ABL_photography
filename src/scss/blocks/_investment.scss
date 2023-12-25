@@ -1,0 +1,58 @@
+.investment-title {
+  @include flex(row, center, center);
+  height: 150px;
+  background-color: $bg;
+  margin-bottom: 64px;
+  @media (max-width: 991px) {
+    height: 100px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.investment-wrap .container {
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
+.investment {
+  @include flex(row, center, center);
+  gap: 100px;
+  @media (max-width: 1200px) {
+    gap: 50px;
+  }
+  @media (max-width: 991px) {
+    gap: 34px;
+  }
+  @media (max-width: 768px) {
+    @include flex(column-reverse, center, center);
+    gap: 25px;
+  }
+  &__content {
+    @include flex(column, flex-start, flex-start);
+    gap: 30px;
+    line-height: 150%;
+    @media (max-width: 768px) {
+      padding: 0 15px;
+      gap: 20px;
+    }
+  }
+  &__img {
+    object-fit: cover;
+    @media (max-width: 1200px) {
+      width: 491px;
+      height: 557px;
+    }
+    @media (max-width: 991px) {
+      width: 370px;
+      height: 491px;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
