@@ -1,0 +1,134 @@
+.free-session-wrap {
+  padding: 100px 0;
+  @media (max-width: 1200px) {
+    padding: 80px 0;
+  }
+  @media (max-width: 991px) {
+    padding: 60px 0 80px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 85px 0;
+  }
+  @media (max-width: 576px) {
+    padding: 60px 0;
+  }
+  &--el {
+    display: none;
+    @media (max-width: 991px) {
+      position: absolute;
+      z-index: 3;
+      top: 212px;
+      right: 277px;
+      display: block;
+      text-align: center;
+      font-family: $font-title;
+      font-size: 60px;
+    }
+    @media (max-width: 768px) {
+      top: 180px;
+      right: 150px;
+    }
+    @media (max-width: 576px) {
+      top: 110px;
+      right: 60px;
+    }
+  }
+}
+.free-session-wrap .container {
+  position: relative;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+.free-session {
+  position: relative;
+  @include flex(column, center, center);
+  gap: 30px;
+  @media (max-width: 1200px) {
+    gap: 24px;
+  }
+  @media (max-width: 991px) {
+    gap: 0;
+  }
+  &-row:nth-child(1) {
+    @media (max-width: 991px) {
+      width: 100%;
+      @include flex(row, flex-start, flex-start);
+    }
+  }
+  &-row:nth-child(2) {
+    @media (max-width: 991px) {
+      width: 100%;
+      @include flex(row, flex-end, flex-end);
+      margin-top: -14px;
+    }
+  }
+  &-row {
+    position: relative;
+    @include flex(row, center, center);
+    gap: 30px;
+    @media (max-width: 1200px) {
+      gap: 24px;
+    }
+    @media (max-width: 991px) {
+      gap: 0;
+    }
+    &-img:not(:last-child) {
+      @media (max-width: 991px) {
+        display: none;
+      }
+    }
+    &-img {
+      object-fit: cover;
+      @media (max-width: 1440px) {
+        width: 520px;
+        height: 441px;
+      }
+      @media (max-width: 1200px) {
+        width: 423px;
+        height: 358px;
+      }
+      @media (max-width: 991px) {
+        width: 430px;
+        height: 270px;
+      }
+      @media (max-width: 768px) {
+        width: 379px;
+        height: 239px;
+      }
+      @media (max-width: 576px) {
+        width: 270px;
+        height: 170px;
+      }
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 45px 30px;
+    width: 861px;
+    @include flex(column, center, center);
+    gap: 20px;
+    transform: translate(-50%, -50%);
+    background-color: $bg;
+    @media (max-width: 1440px) {
+      gap: 15px;
+    }
+    @media (max-width: 1200px) {
+      width: 717px;
+      gap: 12px;
+    }
+    @media (max-width: 991px) {
+      position: static;
+      transform: none;
+      width: 100%;
+    }
+    p {
+      line-height: 150%;
+    }
+    button {
+      width: 320px;
+    }
+  }
+}
