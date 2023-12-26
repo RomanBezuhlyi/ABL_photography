@@ -5,3 +5,4 @@ import "./modules/maternity.js";
 import "./modules/awards.js";
 import "./modules/faq.js";
 import "./modules/reviews.js";
+import "./modules/contact.js";
