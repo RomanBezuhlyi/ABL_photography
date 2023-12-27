@@ -6,3 +6,4 @@ import "./modules/awards.js";
 import "./modules/faq.js";
 import "./modules/reviews.js";
 import "./modules/contact.js";
+import "./modules/select.js";
