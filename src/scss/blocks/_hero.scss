@@ -106,21 +106,24 @@
     }
   }
   &__slide {
+    width: 370px !important;
+    height: 440px !important;
+    object-fit: cover;
     @media (max-width: 1200px) {
-      width: 350px;
-      height: 416.216px;
+      width: 350px !important;
+      height: 416.216px !important;
     }
     @media (max-width: 991px) {
-      width: 270px;
-      height: 330px;
+      width: 270px !important;
+      height: 330px !important;
     }
     @media (max-width: 576px) {
-      width: 430px;
-      height: 453px;
+      width: 430px !important;
+      height: 453px !important;
     }
     @media (max-width: 375px) {
-      width: 375px;
-      height: 453px;
+      width: 375px !important;
+      height: 453px !important;
     }
   }
 }
