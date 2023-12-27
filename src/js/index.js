@@ -8,3 +8,4 @@ import "./modules/reviews.js";
 import "./modules/contact.js";
 import "./modules/select.js";
 import "./modules/datepicker.js";
+import "./modules/modal.js";
