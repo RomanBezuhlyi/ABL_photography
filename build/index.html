@@ -12,6 +12,10 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
   </head>
   <body>
     <header id="header" class="header-wrap">
@@ -75,7 +79,7 @@
         Get a <span>FREE 1-hour Outdoor Session</span> when you book a
         <span>3-hour Studio Session.</span>
       </h1>
-      <button class="hero__btn button">Contact us</button>
+      <a class="hero__btn button" href="#contact">Contact us</a>
       <div class="hero__swiper swiper">
         <div class="swiper-wrapper">
           <img
@@ -1243,6 +1247,14 @@
             <div>Maternity and newborn combo session</div>
           </div>
         </div>
+        <div class="contact__form-input">
+          <input type="text" class="date" placeholder="Due date" />
+          <img
+            class="contact__form-input contact__form-input--calendar"
+            src="./img/icons/calendar.svg"
+            alt=""
+          />
+        </div>
         <textarea
           class="contact__form-textarea"
           placeholder="Message"
@@ -1329,6 +1341,7 @@
   </div>
 </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>

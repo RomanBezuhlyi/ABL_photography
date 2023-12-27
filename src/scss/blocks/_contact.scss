@@ -39,9 +39,20 @@
   }
   &__form {
     &-input {
+      position: relative;
       margin-bottom: 20px;
       @media (max-width: 991px) {
         margin-bottom: 10px;
+      }
+      &--calendar {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        pointer-events: none;
+        @media (max-width: 991px) {
+          right: 15px;
+        }
       }
     }
     &-textarea {
