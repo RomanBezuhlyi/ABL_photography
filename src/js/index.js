@@ -9,4 +9,3 @@ import "./modules/contact.js";
 import "./modules/select.js";
 import "./modules/datepicker.js";
 import "./modules/modal.js";
-import "./modules/button-top.js";

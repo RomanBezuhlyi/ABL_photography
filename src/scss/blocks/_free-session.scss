@@ -34,11 +34,21 @@
     }
   }
 }
+.free-session-title {
+  @include flex(row, center, center);
+  height: 150px;
+  background-color: $bg;
+  margin-bottom: 64px;
+  @media (max-width: 991px) {
+    height: 100px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
 .free-session-wrap .container {
   position: relative;
-  @media (max-width: 768px) {
-    padding: 0;
-  }
 }
 .free-session {
   position: relative;

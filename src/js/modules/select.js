@@ -12,13 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     selectItems.addEventListener("click", function (e) {
       let targetElement = e.target;
 
-      if (targetElement.tagName === "DIV") {
+      if (targetElement.tagName === "P") {
         let selectedText = targetElement.textContent.trim();
-
-        if (window.innerWidth < 768) {
-          selectedText =
-            selectedText.split(/\s+/).slice(0, 3).join(" ") + " ...";
-        }
 
         selectInput.value = selectedText;
 
