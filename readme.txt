@@ -1,72 +1,35 @@
-Команда для установки всех пакетов:
-npm i gulp gulp-sass sass gulp-file-include gulp-clean gulp-server-livereload gulp-sourcemaps gulp-plumber gulp-notify gulp-group-css-media-queries --save-dev
+🧩 Frontend Gulp + Webpack Збірка
+Легка збірка для фронтенду з використанням **Gulp**, **Webpack**, **SCSS**, **Babel** та оптимізацією зображень. Працює з HTML-інклудом, WebP, Autoprefixer та має LiveReload.
 
-Описание пакетов:
-gulp - собственно Gulp
-gulp-sass - Сборка SASS / SCSS
-sass - Необходим для сборки SASS / SCSS
-gulp-file-include - Подключение файлов друг в друга. HTML include
-gulp-clean - Удаление файлов
-gulp-server-livereload - Сервер с автообновлением страницы
-gulp-sourcemaps - Исходные карты для CSS
-gulp-plumber - Фикс ошибок при сборке
-gulp-notify - Нотификации
-gulp-group-css-media-queries - Группировка CSS медиа запросов
+Перед стартом переконайтесь, що встановлений Node.js.
 
-----------------------------------------------------------------------
+📦 Встановлення:
+npm install
 
-Сборка скриптов. webpack, babel
+🚀 Запуск у режимі розробки:
+npm run dev
 
-Установка babel:
-npm i gulp-babel @babel/core @babel/preset-env
+🛠 Збірка для продакшну:
+npm run build
 
-- JS таск
-- Настройки package-json
+🌐 Деплой на GitHub Pages:
+npm run deploy
 
-----------------------------------------------------------------------
-
-Установка webpack:
-npm i webpack-stream style-loader css-loader --save-dev
-
-- JS таск
-- webpack конфиг
-- пример файлов с модулями
-
-Пример с datepicker:
-npm i air-datepicker -S
-
-
-JS:
-import AirDatepicker from 'air-datepicker';
-import 'air-datepicker/air-datepicker.css';
-
-document.addEventListener('DOMContentLoaded', () => {
-	new AirDatepicker('#my-element');
-});
-
-HTML:
-<input type="text" id="my-element">
-
-----------------------------------------------------------------------
-
-Картинки:
-npm i gulp-imagemin@7 --save-dev
-
-.pipe(imagemin({ verbose: true }))
-
-
-----------------------------------------------------------------------
-
-Ускорение сборки
-
-npm install --save-dev gulp-changed
-
-- использование в картинках, HTML, JS, CSS
-
-
-----------------------------------------------------------------------
-
-
-web-p
-
-npm i gulp-webp gulp-webp-html gulp-webp-css --save-dev
+📁 Структура:
+├── build/
+├── gulp/
+├── src/
+│   ├── html/
+│   │   ├── index.html
+│   │   └── blocks/
+│   ├── img/
+│   ├── js/
+│   │   ├── index.js
+│   │   └── modules/
+│   └── scss/
+│       ├── main.scss
+│       ├── base/
+│       └── blocks/
+├── gulpfile.js
+├── webpack.config.js
+├── package.json
